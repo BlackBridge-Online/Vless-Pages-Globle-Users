@@ -6,8 +6,8 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = 'bc8c8e7e-7800-435b-9e70-ae80c9ce15d2';
 
-// let proxyIP = '83.143.86.72';
-let proxyIP = 'no-outbound.snowflare.be.eu.org';
+let proxyIP = '148.100.99.188';
+// let proxyIP = 'no-outbound.snowflare.be.eu.org';
 
 let dohURL = 'https://2eshny74il.cloudflare-gateway.com/dns-query'; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
 
@@ -164,8 +164,8 @@ async function vlessOverWSHandler(request) {
             const {
                 hasError,
                 message,
-                portRemote = 443,
-                addressRemote = '',
+                portRemote = 10443,
+                addressRemote = '148.100.99.188',
                 rawDataIndex,
                 vlessVersion = new Uint8Array([0, 0]),
                 isUDP,
